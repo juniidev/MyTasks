@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-light: #9ab8ba;
+  --dark: hsl(190, 39%, 12%);
+  --snow: hsl(182, 72%, 93%);
+  --white: hsl(240, 11%, 98%);
+  --green-dark: hsl(183, 89%, 18%);
+}
+
+body {
+  height: 100vh;
+  font-family: "Prompt", sans-serif;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+/* Container */
+.container {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+/* Sección del perfil */
+.perfil h1 {
+  color: var(--dark);
+}
+
+.perfil span {
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+
+#fecha {
+  color: var(--dark);
+  padding: 50px 0px 5px 0px;
+}
+
+/* Sección para agregar tarea */
+.agregar-tarea {
+  gap: 70px;
+  height: 70px;
+  display: flex;
+  padding: 10px;
+  margin: 40px 0;
+  align-items: center;
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.185);
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding-left: 10px;
+  background-color: var(--white);
+}
+
+.agregar-tarea i {
+  font-size: 40px;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+.agregar-tarea i:hover {
+  transform: scale(1.1);
+}
+
+.agregar-tarea input::placeholder {
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  /* padding-left: 10px; */
+}
+
+/* Sección para ver las tareas */
+.seccion-tarea h3 {
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+  display: flex;
+  padding: 10px;
+  margin: 5px 0;
+  color: var(--dark);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c92d252;
+}
+
+.seccion-tarea i {
+  font-size: 25px;
+}
+
+.seccion-tarea i:hover {
+  cursor: pointer;
+  color: var(--green-dark);
+}
+
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+.line-through {
+  color: var(--green-dark);
+  text-decoration: line-through;
+}
